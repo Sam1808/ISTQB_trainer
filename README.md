@@ -10,7 +10,7 @@
  ```shell
  pip install -r requirements.txt
  ```
- 2. Файл `.env` со слудующим содержимым: 
+ 2. Файл `.env` со следующим содержимым: 
  ```txt
 TELEGRAM-TOKEN=токен вашего бота
 BASE_FILE=json файл с вопросами/ответами из папки base #(по умолчанию istqb.json)
