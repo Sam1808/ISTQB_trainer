@@ -75,7 +75,7 @@ def handle_new_question_request(update, context, quiz_qa):
     if quiz_qa[question_number]['image']:
         file_path = os.path.join('base', quiz_qa[question_number]['image'])
         update.message.reply_photo(
-        photo=file_path,
+        photo=open(file_path, 'rb'),
         caption=dedent(message),
         reply_markup=reply_markup
         )
